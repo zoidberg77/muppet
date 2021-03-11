@@ -1,0 +1,13 @@
+*.swp
+*.*.swp
+__pycache__
+runs/*
+legacy/*
+logs/*
+runtest.sh
+training_log.py
+graphing/*
+old_graphing/*
+scripts/
+quant.csv
+legacy_configs
