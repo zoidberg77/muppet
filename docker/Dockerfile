@@ -10,7 +10,7 @@ RUN git clone https://github.com/zoidberg77/muppet.git
 
 WORKDIR /app/muppet
 
-RUN conda create -n py3_torch -f pytorch_training.yml python=3.8
+RUN conda env create -n py3_torch -f pytorch_training.yml python=3.8
 
 SHELL ["conda", "run", "-n", "py3_torch", "/bin/bash", "-c"]
 
