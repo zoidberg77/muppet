@@ -15,5 +15,6 @@ RUN conda env create -n py3_torch -f pytorch_training.yml python=3.8
 SHELL ["conda", "run", "-n", "py3_torch", "/bin/bash", "-c"]
 
 RUN python -m pip install -U pip
+RUN pip install robustness
 
 CMD ["/opt/conda/envs/py3_torch/bin/python", "main_template.py", "--config-file", "configs/alexnet_muppet.ini"]
