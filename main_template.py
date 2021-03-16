@@ -5,13 +5,7 @@ import argparse
 import getpass
 
 # set python path so it points to directory that src is in
-parentDir = os.path.split(os.getcwd())
-parentDir = parentDir[0]+"/"+parentDir[1]
-currDir = parentDir.split('/')[-1]
-while currDir != 'pytorch_training':
-    parentDir = os.path.split(parentDir[0])
-    currDir = parentDir[0].split('/')[-1]
-sys.path.append(parentDir[0])
+
 
 
 import src.app as applic
