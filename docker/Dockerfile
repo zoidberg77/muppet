@@ -19,4 +19,4 @@ RUN pip install robustness
 
 WORKDIR /app
 
-CMD ["/opt/conda/envs/py3_torch/bin/python", "main_template.py", "--config-file", "configs/alexnet_muppet.ini"]
+CMD ["/opt/conda/envs/py3_torch/bin/python", "/app/main_template.py", "--config-file", "/app/configs/alexnet_muppet.ini"]
