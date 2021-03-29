@@ -21,6 +21,7 @@ class Params(ppSrc.Params):
         self.policyPatience = config_file.getint('muppet_hyperparameters', 'policy_patience')
         self.fp32EpochsPerLR = config_file.getint('muppet_hyperparameters', 'fp32_epochs_per_lr')
         self.precEpochSchedule = config_file.get('muppet_hyperparameters', 'prec_epoch_schedule', fallback = 'undefined')
+        self.pruningParams = config_file.get('pruning_params') if 'pruning_params' in config_file.sections() else None
         
         self.precSchedule = config_file.get('muppet_hyperparameters', 'prec_schedule', fallback='undefined')
         if self.runMuppet:
